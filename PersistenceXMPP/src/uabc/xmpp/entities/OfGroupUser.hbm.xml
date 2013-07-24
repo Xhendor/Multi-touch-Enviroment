@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-may-2013 19:23:54 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="uabc.xmpp.entities.OfGroupUser" table="ofGroupUser" catalog="openfire">
+        <composite-id name="id" class="uabc.xmpp.entities.OfGroupUserId">
+            <key-property name="groupName" type="string">
+                <column name="groupName" length="50" />
+            </key-property>
+            <key-property name="username" type="string">
+                <column name="username" length="100" />
+            </key-property>
+            <key-property name="administrator" type="byte">
+                <column name="administrator" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

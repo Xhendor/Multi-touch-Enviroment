@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-may-2013 19:23:54 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="uabc.xmpp.entities.OfGroup" table="ofGroup" catalog="openfire">
+        <id name="groupName" type="string">
+            <column name="groupName" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="description" type="string">
+            <column name="description" />
+        </property>
+    </class>
+</hibernate-mapping>

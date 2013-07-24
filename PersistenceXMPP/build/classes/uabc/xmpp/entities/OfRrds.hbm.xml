@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-may-2013 19:23:54 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="uabc.xmpp.entities.OfRrds" table="ofRRDs" catalog="openfire">
+        <id name="id" type="string">
+            <column name="id" length="100" />
+            <generator class="assigned" />
+        </id>
+        <property name="updatedDate" type="long">
+            <column name="updatedDate" not-null="true" />
+        </property>
+        <property name="bytes" type="binary">
+            <column name="bytes" />
+        </property>
+    </class>
+</hibernate-mapping>

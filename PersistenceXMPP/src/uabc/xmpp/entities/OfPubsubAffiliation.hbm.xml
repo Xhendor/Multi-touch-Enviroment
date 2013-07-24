@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-may-2013 19:23:54 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="uabc.xmpp.entities.OfPubsubAffiliation" table="ofPubsubAffiliation" catalog="openfire">
+        <composite-id name="id" class="uabc.xmpp.entities.OfPubsubAffiliationId">
+            <key-property name="serviceId" type="string">
+                <column name="serviceID" length="100" />
+            </key-property>
+            <key-property name="nodeId" type="string">
+                <column name="nodeID" length="100" />
+            </key-property>
+            <key-property name="jid" type="string">
+                <column name="jid" />
+            </key-property>
+        </composite-id>
+        <property name="affiliation" type="string">
+            <column name="affiliation" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

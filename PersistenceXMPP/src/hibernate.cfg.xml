@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://192.168.200.102:3306/openfire?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">adminadmin</property>
+    <mapping resource="uabc/xmpp/entities/OfUser.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfExtComponentConf.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfConversation.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfPubsubItem.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfRrds.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfProperty.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfVersion.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfVcard.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfMucRoom.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfGroup.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfRoster.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfMucRoomProp.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfPubsubAffiliation.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfMucService.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfGroupUser.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfSecurityAuditLog.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfPubsubNodeJids.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfUserProp.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfPubsubDefaultConf.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfSaslauthorized.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfPrivacyList.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfGroupProp.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfMucAffiliation.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfOffline.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfRemoteServerConf.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfMucMember.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfId.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfPubsubSubscription.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfMucServiceProp.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfRosterGroups.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfPubsubNode.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfPrivate.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfPresence.hbm.xml"/>
+    <mapping resource="uabc/xmpp/entities/OfUserFlag.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

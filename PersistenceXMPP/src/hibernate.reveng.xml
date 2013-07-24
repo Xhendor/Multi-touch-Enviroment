@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="openfire"/>
+  <table-filter match-name="ofMucMember"/>
+  <table-filter match-name="ofGroupProp"/>
+  <table-filter match-name="ofConversation"/>
+  <table-filter match-name="ofPubsubNodeJIDs"/>
+  <table-filter match-name="ofPubsubAffiliation"/>
+  <table-filter match-name="ofMucService"/>
+  <table-filter match-name="ofPrivacyList"/>
+  <table-filter match-name="ofMucRoomProp"/>
+  <table-filter match-name="ofGroupUser"/>
+  <table-filter match-name="ofRoster"/>
+  <table-filter match-name="ofUserProp"/>
+  <table-filter match-name="ofProperty"/>
+  <table-filter match-name="ofPubsubItem"/>
+  <table-filter match-name="ofMucServiceProp"/>
+  <table-filter match-name="ofPresence"/>
+  <table-filter match-name="ofPubsubDefaultConf"/>
+  <table-filter match-name="ofVersion"/>
+  <table-filter match-name="ofExtComponentConf"/>
+  <table-filter match-name="ofRRDs"/>
+  <table-filter match-name="ofMucRoom"/>
+  <table-filter match-name="ofPubsubSubscription"/>
+  <table-filter match-name="ofRosterGroups"/>
+  <table-filter match-name="ofRemoteServerConf"/>
+  <table-filter match-name="ofOffline"/>
+  <table-filter match-name="ofSASLAuthorized"/>
+  <table-filter match-name="ofMucAffiliation"/>
+  <table-filter match-name="ofGroup"/>
+  <table-filter match-name="ofPubsubNode"/>
+  <table-filter match-name="ofVCard"/>
+  <table-filter match-name="ofUserFlag"/>
+  <table-filter match-name="ofSecurityAuditLog"/>
+  <table-filter match-name="ofPrivate"/>
+  <table-filter match-name="ofUser"/>
+  <table-filter match-name="ofID"/>
+</hibernate-reverse-engineering>

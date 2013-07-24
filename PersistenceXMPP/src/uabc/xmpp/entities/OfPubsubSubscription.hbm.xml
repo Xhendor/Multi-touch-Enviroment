@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-may-2013 19:23:54 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="uabc.xmpp.entities.OfPubsubSubscription" table="ofPubsubSubscription" catalog="openfire">
+        <composite-id name="id" class="uabc.xmpp.entities.OfPubsubSubscriptionId">
+            <key-property name="serviceId" type="string">
+                <column name="serviceID" length="100" />
+            </key-property>
+            <key-property name="nodeId" type="string">
+                <column name="nodeID" length="100" />
+            </key-property>
+            <key-property name="id" type="string">
+                <column name="id" length="100" />
+            </key-property>
+        </composite-id>
+        <property name="jid" type="string">
+            <column name="jid" not-null="true" />
+        </property>
+        <property name="owner" type="string">
+            <column name="owner" not-null="true" />
+        </property>
+        <property name="state" type="string">
+            <column name="state" length="15" not-null="true" />
+        </property>
+        <property name="deliver" type="byte">
+            <column name="deliver" not-null="true" />
+        </property>
+        <property name="digest" type="byte">
+            <column name="digest" not-null="true" />
+        </property>
+        <property name="digestFrequency" type="int">
+            <column name="digest_frequency" not-null="true" />
+        </property>
+        <property name="expire" type="string">
+            <column name="expire" length="15" />
+        </property>
+        <property name="includeBody" type="byte">
+            <column name="includeBody" not-null="true" />
+        </property>
+        <property name="showValues" type="string">
+            <column name="showValues" length="30" />
+        </property>
+        <property name="subscriptionType" type="string">
+            <column name="subscriptionType" length="10" not-null="true" />
+        </property>
+        <property name="subscriptionDepth" type="byte">
+            <column name="subscriptionDepth" not-null="true" />
+        </property>
+        <property name="keyword" type="string">
+            <column name="keyword" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

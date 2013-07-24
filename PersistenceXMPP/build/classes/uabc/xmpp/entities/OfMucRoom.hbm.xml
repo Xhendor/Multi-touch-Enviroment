@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-may-2013 19:23:54 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="uabc.xmpp.entities.OfMucRoom" table="ofMucRoom" catalog="openfire">
+        <composite-id name="id" class="uabc.xmpp.entities.OfMucRoomId">
+            <key-property name="serviceId" type="long">
+                <column name="serviceID" />
+            </key-property>
+            <key-property name="name" type="string">
+                <column name="name" length="50" />
+            </key-property>
+        </composite-id>
+        <property name="roomId" type="long">
+            <column name="roomID" not-null="true" />
+        </property>
+        <property name="creationDate" type="string">
+            <column name="creationDate" length="15" not-null="true" />
+        </property>
+        <property name="modificationDate" type="string">
+            <column name="modificationDate" length="15" not-null="true" />
+        </property>
+        <property name="naturalName" type="string">
+            <column name="naturalName" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" />
+        </property>
+        <property name="lockedDate" type="string">
+            <column name="lockedDate" length="15" not-null="true" />
+        </property>
+        <property name="emptyDate" type="string">
+            <column name="emptyDate" length="15" />
+        </property>
+        <property name="canChangeSubject" type="byte">
+            <column name="canChangeSubject" not-null="true" />
+        </property>
+        <property name="maxUsers" type="int">
+            <column name="maxUsers" not-null="true" />
+        </property>
+        <property name="publicRoom" type="byte">
+            <column name="publicRoom" not-null="true" />
+        </property>
+        <property name="moderated" type="byte">
+            <column name="moderated" not-null="true" />
+        </property>
+        <property name="membersOnly" type="byte">
+            <column name="membersOnly" not-null="true" />
+        </property>
+        <property name="canInvite" type="byte">
+            <column name="canInvite" not-null="true" />
+        </property>
+        <property name="roomPassword" type="string">
+            <column name="roomPassword" length="50" />
+        </property>
+        <property name="canDiscoverJid" type="byte">
+            <column name="canDiscoverJID" not-null="true" />
+        </property>
+        <property name="logEnabled" type="byte">
+            <column name="logEnabled" not-null="true" />
+        </property>
+        <property name="subject" type="string">
+            <column name="subject" length="100" />
+        </property>
+        <property name="rolesToBroadcast" type="byte">
+            <column name="rolesToBroadcast" not-null="true" />
+        </property>
+        <property name="useReservedNick" type="byte">
+            <column name="useReservedNick" not-null="true" />
+        </property>
+        <property name="canChangeNick" type="byte">
+            <column name="canChangeNick" not-null="true" />
+        </property>
+        <property name="canRegister" type="byte">
+            <column name="canRegister" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

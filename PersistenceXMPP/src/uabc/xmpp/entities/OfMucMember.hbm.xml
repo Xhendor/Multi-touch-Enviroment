@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-may-2013 19:23:54 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="uabc.xmpp.entities.OfMucMember" table="ofMucMember" catalog="openfire">
+        <composite-id name="id" class="uabc.xmpp.entities.OfMucMemberId">
+            <key-property name="roomId" type="long">
+                <column name="roomID" />
+            </key-property>
+            <key-property name="jid" type="string">
+                <column name="jid" length="65535" />
+            </key-property>
+        </composite-id>
+        <property name="nickname" type="string">
+            <column name="nickname" />
+        </property>
+        <property name="firstName" type="string">
+            <column name="firstName" length="100" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="lastName" length="100" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" length="100" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" />
+        </property>
+        <property name="faqentry" type="string">
+            <column name="faqentry" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-may-2013 19:23:54 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="uabc.xmpp.entities.OfPubsubNode" table="ofPubsubNode" catalog="openfire">
+        <composite-id name="id" class="uabc.xmpp.entities.OfPubsubNodeId">
+            <key-property name="serviceId" type="string">
+                <column name="serviceID" length="100" />
+            </key-property>
+            <key-property name="nodeId" type="string">
+                <column name="nodeID" length="100" />
+            </key-property>
+        </composite-id>
+        <property name="leaf" type="byte">
+            <column name="leaf" not-null="true" />
+        </property>
+        <property name="creationDate" type="string">
+            <column name="creationDate" length="15" not-null="true" />
+        </property>
+        <property name="modificationDate" type="string">
+            <column name="modificationDate" length="15" not-null="true" />
+        </property>
+        <property name="parent" type="string">
+            <column name="parent" length="100" />
+        </property>
+        <property name="deliverPayloads" type="byte">
+            <column name="deliverPayloads" not-null="true" />
+        </property>
+        <property name="maxPayloadSize" type="java.lang.Integer">
+            <column name="maxPayloadSize" />
+        </property>
+        <property name="persistItems" type="java.lang.Byte">
+            <column name="persistItems" />
+        </property>
+        <property name="maxItems" type="java.lang.Integer">
+            <column name="maxItems" />
+        </property>
+        <property name="notifyConfigChanges" type="byte">
+            <column name="notifyConfigChanges" not-null="true" />
+        </property>
+        <property name="notifyDelete" type="byte">
+            <column name="notifyDelete" not-null="true" />
+        </property>
+        <property name="notifyRetract" type="byte">
+            <column name="notifyRetract" not-null="true" />
+        </property>
+        <property name="presenceBased" type="byte">
+            <column name="presenceBased" not-null="true" />
+        </property>
+        <property name="sendItemSubscribe" type="byte">
+            <column name="sendItemSubscribe" not-null="true" />
+        </property>
+        <property name="publisherModel" type="string">
+            <column name="publisherModel" length="15" not-null="true" />
+        </property>
+        <property name="subscriptionEnabled" type="byte">
+            <column name="subscriptionEnabled" not-null="true" />
+        </property>
+        <property name="configSubscription" type="byte">
+            <column name="configSubscription" not-null="true" />
+        </property>
+        <property name="accessModel" type="string">
+            <column name="accessModel" length="10" not-null="true" />
+        </property>
+        <property name="payloadType" type="string">
+            <column name="payloadType" length="100" />
+        </property>
+        <property name="bodyXslt" type="string">
+            <column name="bodyXSLT" length="100" />
+        </property>
+        <property name="dataformXslt" type="string">
+            <column name="dataformXSLT" length="100" />
+        </property>
+        <property name="creator" type="string">
+            <column name="creator" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" />
+        </property>
+        <property name="language" type="string">
+            <column name="language" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="50" />
+        </property>
+        <property name="replyPolicy" type="string">
+            <column name="replyPolicy" length="15" />
+        </property>
+        <property name="associationPolicy" type="string">
+            <column name="associationPolicy" length="15" />
+        </property>
+        <property name="maxLeafNodes" type="java.lang.Integer">
+            <column name="maxLeafNodes" />
+        </property>
+    </class>
+</hibernate-mapping>

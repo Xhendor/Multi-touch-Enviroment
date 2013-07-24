@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-may-2013 19:23:54 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="uabc.xmpp.entities.OfSecurityAuditLog" table="ofSecurityAuditLog" catalog="openfire">
+        <id name="msgId" type="long">
+            <column name="msgID" />
+            <generator class="assigned" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="64" not-null="true" />
+        </property>
+        <property name="entryStamp" type="long">
+            <column name="entryStamp" not-null="true" />
+        </property>
+        <property name="summary" type="string">
+            <column name="summary" not-null="true" />
+        </property>
+        <property name="node" type="string">
+            <column name="node" not-null="true" />
+        </property>
+        <property name="details" type="string">
+            <column name="details" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>
